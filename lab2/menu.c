@@ -3,7 +3,7 @@ int main()
 {    char cmd;
     while(1)
      {
-        scanf(%c,cmd);
+        scanf(“%c”,cmd);
         if (cmd=="help")
            {printf("help");}
         else if(cmd=="exit")

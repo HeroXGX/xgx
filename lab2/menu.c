@@ -1,26 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
-{    char cmd;
+{    char cmd[128];
     while(1)
      {
-        scanf(“%c”,cmd);
-        if (cmd=="help")
+	scanf("%s",cmd);
+        if(strcmp(cmd,"help")==0)
+        
            {printf("help");}
-        else if(cmd=="exit")
-          {printf("exit");}
-        else if(cmd=="A")
+        else if(strcmp(cmd,"exit")==0)
+          {printf("this is quit cmd");}
+        else if(strcmp(cmd,"A")==0)
           {printf("a");}
-        else if (cmd=="B")
+        else if (strcmp(cmd,"B")==0)
           {printf("b");}
-        else if (cmd=="C")
+        else if (strcmp(cmd,"C")==0)
           {printf("c");}
-        else if (cmd=="D")
+        else if (strcmp(cmd,"D")==0)
           {printf("d");}
-        else if (cmd=="E")
+        else if (strcmp(cmd,"E")==0)
           {printf("e");}
         else
-            break;
+            {
+		printf("Wrong");
+	    }
 
      }
-return0;
+return 0;
 }
